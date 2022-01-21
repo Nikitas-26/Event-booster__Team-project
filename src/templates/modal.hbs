@@ -1,12 +1,17 @@
-{{!-- {{#each this}}
+{{#each this}}
 <div class="modal modal-js">
     <button class="modal-close modal-close-js">Close</button>
     <div>
-        <img src="" alt="">
+        <img src="{{event.images.url}}" alt="{{event.name}}">
         <div class="modal-content modal-content-js">
-            <h2></h2>
+            <h2>INFO</h2>
+            <p>{{event.description}}</p>
+            <h2>WHEN</h2>
+            <p>{{events.dates.start.localDate}}{{events.dates.start.localTime}}</p>
+            <h2>WHO</h2>
+            <p></p>
         </div>
     </div>
 
 </div>
-{{/each}} --}}
+{{/each}}
