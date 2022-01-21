@@ -1,14 +1,14 @@
-// (() => {
-//     const refs = {
-//       openModalBtn: document.querySelector('[data-franshize-open]'),
-//       closeModalBtn: document.querySelector('[data-franshize-close]'),
-//       modal: document.querySelector('[data-franshize]'),
-//     };
+(() => {
+    const refs = {
+      openModalBtn: document.querySelector('.photo-card'),
+      closeModalBtn: document.querySelector('.modal-close-js'),
+      modal: document.querySelector('.modal-js'),
+    };
 
-//     refs.openModalBtn.addEventListener('click', toggleModal);
-//     refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
 
-//     function toggleModal() {
-//       refs.modal.classList.toggle('is-hidden');
-//     }
-//   })(); 
+    function toggleModal() {
+      refs.modal.classList.toggle('is-hidden');
+    }
+  })(); 
